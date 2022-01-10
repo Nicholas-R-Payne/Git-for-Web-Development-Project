@@ -24,7 +24,11 @@ Now that you are all set up, it's time to learn a little more about the tools of
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. GitHub is a cloud-based hosting service that lets you manage Git repositories.
 2. Why do we create a branch?
 We create a branch to isolate development work without affecting other branches in the repository. It allows us to develop features, fix bugs, or safely experiment with new ideas in a contained area of our repository.
-3. What is the purpose of a pull request? 
-4. What is the command you can use to switch between branches? For example you are working on a feature branch and you want to switch back to main. 
+3. What is the purpose of a pull request?
+The purpose of a pull request is to let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the base branch.
+4. What is the command you can use to switch between branches? For example you are working on a feature branch and you want to switch back to main.
+To switch between branches, you use the `git switch` command and specify the name of the branch you want to switch to. For example, if you are working on a feature branch, you can use `git switch main` to switch back to main.
 5. Explain the difference between `git fetch`, `git merge` and `git pull` what does each command do? 
+The command `git fetch` downloads commits, files, and refs from a remote repository into your local repo. The command `git merge` integrates the independent lines of development into a single branch. The command `git pull` fetches and downloads content from a remote repository and immediately updates the local repository to match that content.
 6. What is a merge conflict? How do you resolve a merge conflict? 
+A merge conflict is when competing changes are made to the same line of a file, or when one person edits a file and another person deletes the same file. To resolve a merge conflict caused by competing line changes, you must choose which changes to incorporate from the different branches in a new commit. To resolve a merge conflict caused by competing changes to a file, you must choose whether to delete or keep the removed file in a new commit.
